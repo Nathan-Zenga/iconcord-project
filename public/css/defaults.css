@@ -1,0 +1,47 @@
+.dt-view,
+.dt-view-md {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.mb-view {
+		display: none;
+	}
+
+	.dt-view {
+		display: initial;
+	}
+}
+
+@media (min-width: 992px) {
+	.mb-view-md {
+		display: none;
+	}
+
+	.dt-view-md {
+		display: initial;
+	}
+}
+
+.centre, .centreX, .centreY {
+	position: relative;
+}
+
+.centre {
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.centreX {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.centreY {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+[class*="col-"] {
+	padding: 0;
+}
