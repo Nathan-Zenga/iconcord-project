@@ -1,11 +1,12 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 @import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800|Arvo|Questrial|Poppins:600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,700,800,900|Playfair+Display:400,500,600,700,800,900');
 
 html, body {
-	font-family: 'Poppins', 'Montserrat', 'Century Gothic', sans-serif;
-	background-color: lightblue;
+	font-family: 'Playfair Display', sans-serif;
+	background-color: rgb(114, 135, 101);
 	font-feature-settings: "liga" 0;
+	color: rgb(255, 180, 67);
 }
 
 a, a:link, a:visited, a:hover {
@@ -36,6 +37,18 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+h1 {
+	font-weight: 900
+}
+
+h2 {
+	font-weight: 700
+}
+
+.font2 {
+	font-family: 'Poppins', sans-serif;
+}
+
 header h1 {
 	text-align: center;
 	padding: 1em 0;
@@ -44,6 +57,9 @@ header h1 {
 
 header nav {
 	padding: 1em 0;
+	background-color: rgb(255, 180, 67);
+	color: rgb(25, 25, 25);
+	text-align: center;
 }
 
 header nav .link {
@@ -53,7 +69,7 @@ header nav .link {
 
 .cover_image {
 	height: 300px;
-	background-image: linear-gradient(to bottom, transparent, lightblue), url(https://iconcordteam.files.wordpress.com/2019/09/pexels-photo-1108099.jpeg);
+	background-image: linear-gradient(to bottom, transparent, rgb(114, 135, 101)), url(https://iconcordteam.files.wordpress.com/2019/09/pexels-photo-1108099.jpeg);
 	background-size: cover;
 	background-position: center 40%;
 }
@@ -62,6 +78,7 @@ header nav .link {
 	padding: 1em 0;
 	text-align: center;
 	font-size: 2em;
+	text-shadow: 0 0 25px black;
 }
 
 section {
@@ -96,7 +113,7 @@ section#ethics p {
 footer {
 	text-align: center;
 	padding: 2em 0;
-	background-color: rgba(255, 0, 0, .2);
+	background-color: rgba(0, 0, 0, .75);
 }
 
 footer .row {
